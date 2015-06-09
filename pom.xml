@@ -724,4 +724,11 @@
 			<timezone>+8</timezone>
 		</developer>
 	</developers>
+	
+	<distributionManagement>
+        <repository>
+            <id>fourb-release</id>
+            <url>http://nexus.fourbdev.com/nexus/content/repositories/fourb-release/</url>
+        </repository>
+    </distributionManagement>
 </project>
