@@ -31,10 +31,22 @@
 		<eclipse.useProjectReferences>false</eclipse.useProjectReferences>
 		<skip_maven_deploy>false</skip_maven_deploy>
 	</properties>
+	
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-framework-bom</artifactId>
+				<version>3.2.9.RELEASE</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 	<dependencies>
 		<dependency>
 			<groupId>com.alibaba</groupId>
-			<artifactId>dubbo</artifactId>
+			<artifactId>baitian-dubbo</artifactId>
 			<version>${project.parent.version}</version>
 		</dependency>
 		<dependency>
@@ -130,6 +142,11 @@
 			<groupId>javax.cache</groupId>
 			<artifactId>cache-api</artifactId>
 		</dependency>
+		<dependency>
+	        <groupId>org.apache.velocity</groupId>
+	        <artifactId>velocity</artifactId>
+	        <version>1.7</version>
+    	</dependency>
 	</dependencies>
 	<build>
 		<plugins>
