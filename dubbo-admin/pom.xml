@@ -46,7 +46,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>com.alibaba</groupId>
-			<artifactId>baitian-dubbo</artifactId>
+			<artifactId>dubbo</artifactId>
 			<version>${project.parent.version}</version>
 		</dependency>
 		<dependency>
